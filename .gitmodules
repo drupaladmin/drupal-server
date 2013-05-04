@@ -1,0 +1,3 @@
+[submodule "common/nginx"]
+	path = common/nginx
+	url = git://github.com/perusio/drupal-with-nginx.git
