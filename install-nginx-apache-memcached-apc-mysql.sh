@@ -1,5 +1,5 @@
 # sync our configuration with /etc
-aptitude install rsync apache2-mpm-prefork mysql-server nginx memcached php5-memcached php5-gd
+apt-get -q -y install rsync apache2-mpm-prefork mysql-server nginx memcached php5-memcached php5-gd
 
 rsync -av ./common/apache2/ /etc/apache2/
 rsync -av ./common/mysql/ /etc/mysql/
