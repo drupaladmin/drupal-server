@@ -1,6 +1,8 @@
-# sync our configuration with /etc
+git submodule update --init
+
 apt-get -q -y install rsync apache2-mpm-prefork mysql-server nginx memcached php5-memcached php5-gd php-apc
 
+# sync our configuration with /etc
 rsync -av ./common/ /etc/
 
 rsync -av ./nginx-apache-memcached-apc-mysql/ /etc/
