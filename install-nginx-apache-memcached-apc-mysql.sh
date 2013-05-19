@@ -8,7 +8,8 @@ rsync -av ./common/ /etc/
 
 rsync -av ./nginx-apache-memcached-apc-mysql/ /etc/
 
-mkdir /var/www/sites/default /var/www/sites/default/html /var/www/sites/default/logs
+mkdir /var/www/sites/default /var/www/sites/default/html /var/www/sites/default/logs /var/www/tmp
+chmod 777 /var/www/tmp
 
 /etc/init.d/apache2 restart
 /etc/init.d/nginx restart
