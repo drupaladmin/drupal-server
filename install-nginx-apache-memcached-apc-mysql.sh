@@ -1,6 +1,6 @@
 git submodule update --init
 
-apt-get -q -y install rsync apache2-mpm-prefork mysql-server nginx memcached php5-memcached php5-gd php-apc
+apt-get -q -y install rsync apache2-mpm-prefork mysql-server nginx memcached php5-memcached php5-mysql php5-gd php-apc
 a2enmod rewrite
 
 # sync our configuration with /etc
